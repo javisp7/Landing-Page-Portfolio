@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:#DECCCC;
+    height: 70px;
+    width: 100vw;
+}
+.logo{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    padding-left: 20px;
+}
+.enlaces{
+    background-color:#DECCCC;
+    display: flex;
+    align-items: center;
+}
+.enlace{
+    font-family: Rubik+Microbe;
+    padding-right: 10px;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    -webkit-text-size-adjust: 100%;
+}
