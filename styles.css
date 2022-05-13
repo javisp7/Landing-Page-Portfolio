@@ -8,13 +8,13 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color:#DECCCC;
-    height: 70px;
-    width: 100vw;
+    height: 120px;
+    width: 100%;
 }
 .logo{
     display: flex;
-    width: 70px;
-    height: 70px;
+    width: 76px;
+    height: 120px;
     padding-left: 20px;
 }
 .enlaces{
@@ -30,7 +30,7 @@ nav{
     color: grey;
     cursor: pointer;
     -webkit-text-size-adjust: 100%;
-    font-size: 25px;
+    font-size: 35px;
 }
 main{
     display: flex;
@@ -48,13 +48,13 @@ main{
     justify-content: space-around;
     text-align: center;
     padding: 8rem 15rem;
+    flex-wrap: wrap;
     
 
 }
 .img_tele{
     width: 45%;
-    height: 60%;
-    margin-left: 10px;
+    flex-wrap: wrap;
 }
 .seccion{
     display: flex;
@@ -89,6 +89,15 @@ h2{
     margin-top: 6px;
     font-size: 30px;
 }
+.img_tele:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
 
 .para_informacion{
     flex-direction: row;
@@ -105,7 +114,10 @@ h2{
     text-transform: uppercase;
     cursor: pointer;
 }
-
+.para_informacion:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.5)
+  }
 .chiches{
     margin: 0px;
     padding: 3rem 88rem;  
@@ -130,4 +142,109 @@ h2{
 .p_card{   
      margin-top: 3px;
     font-size: 20px;
+}
+.enlace:hover{
+    color: beige;
+}
+.enlace:active{
+    color: aqua;
+} 
+/*section de contacto*/
+.tituloSS{
+    width: 100%;
+    margin: auto;
+    color: black;
+    font-weight: bold;
+    background-color: #DECCCC;
+    padding: 0.5rem 1rem;
+   
+}
+.contactosss{
+    width: 100%;
+    margin: auto;
+    display:flex;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.orden_cotactos{
+    padding: 1rem;
+    gap: 1rem;
+}
+.Contact-form{
+    max-width: 850px;
+    display: flex;
+    justify-content: flex-start;
+}
+.input.espacio {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+.input-espacio, .msg {
+    width: 48%;
+}
+.input-espacio input, .msg textarea {
+    margin: 10px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid darksalmon;
+    padding: 25px;
+    color: black;
+    width: 95%;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+.msg textarea {
+    height: 220px;
+}
+::-webkit-input-placeholder {
+    color: black;
+}
+.btn button {
+    list-style: none;
+    border: none;
+    background-color: darksalmon;
+    padding: 0.5rem;
+    margin-right: 1.6rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: darkblue;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    width: 120px;
+    float: right;
+    font-family: 'Oswald', sans-serif;
+    margin-top:200px ;
+    
+}
+.btn button:hover {
+    background-color: white;
+}
+.mapa {
+    width: 350px;
+    height: 270px;
+    background-color: black;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+/*Footer*/
+footer {
+    background-color: #DECCCC;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.redes a {
+    color: black;
+    padding: 1rem 1rem;
+    display: block;
+}
+.redes a:hover {
+    color: white;
 }

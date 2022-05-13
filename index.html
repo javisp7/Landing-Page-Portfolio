@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <nav class="nav">
@@ -17,14 +18,14 @@
              <img src="icono blanco.png" alt="">
          </div>
      <div class="enlaces">
-         <a href="#" class="enlace">inicio</a>
-         <a href="#" class="enlace">productos</a>
-         <a href="#" class="enlace">consultas</a>  
+         <a href="#home" class="enlace">inicio</a>
+         <a href="#servicios" class="enlace">productos</a>
+         <a href="#contacto" class="enlace">consultas</a>  
      </div>
         
     </nav>
     <main>
-        <section class="inicio_section">
+        <section class="inicio_section" id="home">
             <div class="seccion">
                 <div class="titulo_texto">
                 <h1>Hisense</h1>
@@ -37,23 +38,52 @@
                 <img src="HISENSE TELE.jpg" alt="TELE">
             </div>
         </section>
-        <section class="chiches">
+        <section class="chiches" id="servicios">
             <div class="card_container">
                 <div class="card">
-                    <i class="fa-solid fa-box-open"></i>
+                    <i class="fa-solid fa-box-open animate__animated animate__shakeX"></i>
                     <p class="p_card">busque su producto y se lo llevamos a su casa</p>
                 </div>
                 <div class="card">
-                    <i class="fa-solid fa-wrench"></i>
+                    <i class="fa-solid fa-wrench animate__animated animate__shakeX"></i>
                     <p class="p_card">servicio tecnico la 24hs</p>
                 </div>
                 <div class="card">
-                    <i class="fa-solid fa-comment-dots"></i>
+                    <i class="fa-solid fa-comment-dots animate__animated animate__shakeX"></i>
                     <p class="p_card">consultas al 0800-222-6581</p>
                 </div>
             </div> 
         </section>
-    </main>    
+        <h2 class="tituloSS">CONTACTO</h2>
+        <section class="contactosss" id="contacto">
+            <div class="orden_cotactos">
+                <form class="Contact-form">
+                    <div class="input-espacio">
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="email" name="correo" placeholder="correo">
+                        <input type="number" name="telefono" placeholder="telefono">
+                    </div>
+                    <div class="msg">
+                        <textarea placeholder="mensaje"></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" name="submit">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.6529241967614!2d-64.18633214871912!3d-31.42368730365941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28ff03b372d%3A0x9fa821b4e129d603!2sItuzaing%C3%B3%20567%2C%20X5000IJK%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1652457886332!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>  
+    <footer>
+        <div class="redes">
+            <div><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></div>
+            <div><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+            <div><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter-square"></i></a></div>
+            <div><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></div>
+        </div>
+    </footer>
 </body>
 </html>
 
